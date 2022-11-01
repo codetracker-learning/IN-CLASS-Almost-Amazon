@@ -1,7 +1,7 @@
-// import firebaseConfig from './apiKeys';
+// import client from '../utils/client';
 // API CALLS FOR BOOKS
 
-// const dbUrl = firebaseConfig.databaseURL;
+// const endpoint = client.databaseURL;
 
 // TODO: GET BOOKS
 const getBooks = () => {};
