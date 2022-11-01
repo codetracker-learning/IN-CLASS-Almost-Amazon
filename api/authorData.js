@@ -1,6 +1,6 @@
-// import firebaseConfig from './apiKeys';
+// import client from '../utils/client';
 
-// const dbUrl = firebaseConfig.databaseURL;
+// const endpoint = client.databaseURL;
 
 // FIXME:  GET ALL AUTHORS
 const getAuthors = () => {};

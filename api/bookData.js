@@ -4,7 +4,17 @@ import client from '../utils/client';
 const endpoint = client.databaseURL;
 
 // TODO: GET BOOKS
-const getBooks = () => {};
+const getBooks = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/books.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    }, // you technically do not need the options object for GET requests, but using it here for consistency
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(Object.values(data)))
+    .catch(reject);
+});
 
 // TODO: DELETE BOOK
 const deleteBook = () => {};
